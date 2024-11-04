@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.26)
 project(op5 C)
 
-set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD 99)
 
 add_executable(op5 main.c)
