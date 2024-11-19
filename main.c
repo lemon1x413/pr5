@@ -6,8 +6,7 @@
 #include "validation.h"
 #include "functions.h"
 
-int main()
-{
+int main() {
     srand(time(NULL));
     do {
         int strN = 0, strSize = 0, choiceFilling = 0, choiceSorting = 0;
