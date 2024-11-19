@@ -1,5 +1,6 @@
 #ifndef OP5_VALIDATION_H
 #define OP5_VALIDATION_H
+#include <ctype.h>
 
 int validInputInt ( char *message, int min, int max )
 {
@@ -32,4 +33,27 @@ int validInputChoice ( char *message, int choice1, int choice2 )
     return value;
 }
 
+int validInputString(char *arr, int size) {
+    unsigned stringLen = strlen(arr);
+    if (stringLen == 0 || *arr == '\n') {
+        printf("Invalid input. Entered string is empty.\n");
+        return 0;
+    }
+    if (arr[stringLen - 1] != '\n') {
+        printf("Invalid input.Max length of string is: %d\n", size);
+        fflush(stdin);
+        return 0;
+    }
+    if (arr[stringLen - 1] == '\n') {
+        arr[stringLen - 1] = '\0';
+        stringLen--;
+    }
+    for (int i = 0; i < stringLen; i++) {
+        if (!isalpha(arr[i])) {
+            printf("String must contain only letters.\n");
+            return 0;
+        }
+    }
+    return 1;
+}
 #endif //OP5_VALIDATION_H

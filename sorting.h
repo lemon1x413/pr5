@@ -2,12 +2,12 @@
 #define OP5_SORTING_H
 #include <string.h>
 
-void bubbleSortAscending (char **mass, int num)
+void bubbleSortAscending (char **mass, int n)
 {
     int j = 0;
-    for(int i=0;i<num-1;i++)
+    for(int i=0; i < n - 1; i++)
     {
-        for(j=i+1;j<num;j++)
+        for(j=i+1; j < n; j++)
         {
             if (strcmp(mass[i],mass[j]) > 0)
             {
@@ -19,12 +19,12 @@ void bubbleSortAscending (char **mass, int num)
         }
     }
 }
-void bubbleSortDescending (char **mass, int num)
+void bubbleSortDescending (char **mass, int n)
 {
     int j = 0;
-    for(int i=0;i<num-1;i++)
+    for(int i=0; i < n - 1; i++)
     {
-        for(j=i+1;j<num;j++)
+        for(j=i+1; j < n; j++)
         {
             if (strcmp(mass[i],mass[j]) < 0)
             {
