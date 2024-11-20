@@ -11,9 +11,10 @@ void inputString(char **arr, int n, int size) {
 }
 
 char random() {
+    int min = 65, max = 122;
     char generatedChar;
     do {
-        generatedChar = 65 + rand() % (122 - 65 + 1);
+        generatedChar = min + rand() % (max - min + 1);
     } while (generatedChar > 90 && generatedChar < 97);
     return generatedChar;
 }
