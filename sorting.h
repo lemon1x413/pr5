@@ -29,5 +29,4 @@ void bubbleSortDescending(char **mass, int n) {
     }
 }
 
-
-#endif //OP5_SORTING_H
+#endif

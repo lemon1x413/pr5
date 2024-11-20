@@ -49,8 +49,8 @@ int main() {
             }
             printf("[----------Sorted strings----------]\n");
             printString(listAddr, strN);
-            printf("Press ENTER to continue sorting, or any other key to EXIT\n");
-        } while (getch() == 13);
+            printf("Press 'r' to continue sorting, or any other key to EXIT\n");
+        } while (getch() == 'r');
         printf("Press ENTER to continue, or any other key to EXIT\n");
     } while (getch() == 13);
     return 0;

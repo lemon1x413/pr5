@@ -56,4 +56,5 @@ int validInputString(char *arr, int size) {
     }
     return 1;
 }
-#endif //OP5_VALIDATION_H
+
+#endif
